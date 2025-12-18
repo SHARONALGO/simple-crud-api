@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended:false})) //for url-encoded values
 
 
 const Product = require("./models/product.model.js");
-mongoose.connect("mongodb+srv://sharonsaji9846_db_user:sharon@cluster0.hjxf8bg.mongodb.net/?appName=Cluster0")
+mongoose.connect("") // your mongo db connection string 
 .then(() =>{
     console.log("Connected to MongoDB");
     app.listen(3000,() =>{
